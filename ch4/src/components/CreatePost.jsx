@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 
-import { createPost } from '../api/posts'
+import { createPost } from '../api/posts.js'
 
 export default function CreatePost() {
   const [title, setTitle] = useState('')
