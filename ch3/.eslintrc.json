@@ -3,6 +3,10 @@
   "env": {
     "node": true
   },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
   "overrides": [
     {
       "files": ["*.js", "*.jsx"]

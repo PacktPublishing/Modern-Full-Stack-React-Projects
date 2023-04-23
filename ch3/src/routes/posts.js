@@ -13,9 +13,11 @@ export default function postRoutes(app) {
     const { sortBy, sortOrder, author, tag } = req.query
     const options = { sortBy, sortOrder }
 
-    if (author && tag)
-      throw new Error('query by either author or tag, not both')
-    else if (author) {
+    if (author && tag) {
+      return res
+        .status(400)
+        .json({ error: 'query by either author or tag, not both' })
+    } else if (author) {
       return res.json(await listPostsByAuthor(author, options))
     } else if (tag) {
       return res.json(await listPostsByTag(tag, options))
