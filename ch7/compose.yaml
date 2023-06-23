@@ -18,7 +18,10 @@ services:
       context: .
       args:
         VITE_BACKEND_URL: http://localhost:3001/api/v1
+    environment:
+      - PORT=3000
+      - VITE_BACKEND_URL=http://host.docker.internal:3001/api/v1
     ports:
-      - '3000:80'
+      - '3000:3000'
     depends_on:
       - blog-backend
