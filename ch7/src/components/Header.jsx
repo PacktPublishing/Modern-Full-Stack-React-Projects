@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import jwtDecode from 'jwt-decode'
 
 import { useAuth } from '../contexts/AuthContext.jsx'
@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <div>
-      {/* <Link to='/login'>Log In</Link> | <Link to='/signup'>Sign Up</Link> */}
+      <Link to='/login'>Log In</Link> | <Link to='/signup'>Sign Up</Link>
     </div>
   )
 }
