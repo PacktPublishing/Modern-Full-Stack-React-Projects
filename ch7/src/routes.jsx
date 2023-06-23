@@ -12,6 +12,7 @@ export default [
     path: '/',
     loader: async () => {
       const queryClient = new QueryClient()
+
       const author = ''
       const sortBy = 'createdAt'
       const sortOrder = 'descending'

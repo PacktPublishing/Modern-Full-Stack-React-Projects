@@ -52,19 +52,19 @@ async function createDevServer() {
     server: { middlewareMode: true },
     appType: 'custom',
   })
-
   app.use(vite.middlewares)
 
   app.use('*', async (req, res, next) => {
-    const url = req.originalUrl
-
     try {
-      let template = fs.readFileSync(
+      const templateHtml = fs.readFileSync(
         path.resolve(__dirname, 'index.html'),
         'utf-8',
       )
 
-      template = await vite.transformIndexHtml(url, template)
+      const template = await vite.transformIndexHtml(
+        req.originalUrl,
+        templateHtml,
+      )
 
       const { render } = await vite.ssrLoadModule('/src/entry-server.jsx')
 
