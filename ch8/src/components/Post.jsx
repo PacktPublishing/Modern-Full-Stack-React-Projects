@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import slug from 'slug'
 
 import User from './User.jsx'
 
@@ -15,7 +16,7 @@ export default function Post({
       {fullPost ? (
         <h3>{title}</h3>
       ) : (
-        <Link to={`/posts/${_id}`}>
+        <Link to={`/posts/${_id}/${slug(title)}`}>
           <h3>{title}</h3>
         </Link>
       )}
