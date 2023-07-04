@@ -8,11 +8,11 @@ export default function CreatePost() {
   const [token] = useAuth()
 
   const [title, setTitle] = useState('')
-  const [content, setContent] = useState('')
+  const [contents, setContents] = useState('')
 
   const queryClient = useQueryClient()
   const createPostMutation = useMutation({
-    mutationFn: () => createPost(token, { title, content }),
+    mutationFn: () => createPost(token, { title, contents }),
     onSuccess: () => queryClient.invalidateQueries(['posts']),
   })
 
@@ -34,7 +34,10 @@ export default function CreatePost() {
         />
       </div>
       <br />
-      <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+      <textarea
+        value={contents}
+        onChange={(e) => setContents(e.target.value)}
+      />
       <br />
       <br />
       <input

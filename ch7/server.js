@@ -31,9 +31,7 @@ async function createProdServer() {
       const render = (await import('./dist/server/entry-server.js')).render
 
       const appHtml = await render(req)
-
       const html = template.replace(`<!--ssr-outlet-->`, appHtml)
-
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {
       next(e)
@@ -69,9 +67,7 @@ async function createDevServer() {
       const { render } = await vite.ssrLoadModule('/src/entry-server.jsx')
 
       const appHtml = await render(req)
-
       const html = template.replace(`<!--ssr-outlet-->`, appHtml)
-
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {
       vite.ssrFixStacktrace(e)
