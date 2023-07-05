@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { useQuery } from '@tanstack/react-query'
+import { Helmet } from 'react-helmet'
 
 import Header from '../components/Header.jsx'
 import Post from '../components/Post.jsx'
@@ -15,6 +16,9 @@ export default function ViewPost({ postId }) {
 
   return (
     <div style={{ padding: 8 }}>
+      <Helmet>
+        <title>{post ? `${post.title} |` : ''} Full-Stack React Blog</title>
+      </Helmet>
       <Header />
       <br />
       <hr />
