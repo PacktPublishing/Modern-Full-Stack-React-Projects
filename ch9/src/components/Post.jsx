@@ -12,7 +12,7 @@ export default function Post({
   fullPost = false,
 }) {
   return (
-    <div>
+    <article>
       {fullPost ? (
         <h3>{title}</h3>
       ) : (
@@ -27,7 +27,7 @@ export default function Post({
           Written by <User id={author} />
         </i>
       )}
-    </div>
+    </article>
   )
 }
 
