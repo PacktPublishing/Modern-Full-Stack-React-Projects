@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=production node server",
     "dev": "node server",
     "e2e": "concurrently \"npm run e2e:client\" \"npm run e2e:server\"",
-    "e2e:client": "npm run start",
+    "e2e:client": "npm run build && npm run start",
     "e2e:server": "cd services/backend/ && npm run e2e",
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build --outDir dist/client",
