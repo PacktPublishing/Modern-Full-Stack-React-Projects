@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 2
+# Full-Stack React Projects / Chapter 3
 
-_Getting to Know Node.js and MongoDB_
+_Implementing a Backend Using Express, Mongoose ODM and Jest_
 
 ## Requirements
 
@@ -26,14 +26,30 @@ npm install
 
 ## Start
 
-To run the backend scripts, run the respective files using node, as follows:
+To run the example backend script, directly execute it with node:
 
 ```
-node backend/helloworld.js
-node backend/files.js
-node backend/simpleweb.js
-node backend/webfiles.js
-node backend/mongodbweb.js
+node src/example.js
 ```
 
-For those scripts that start a web server, you can exit them by pressing the `Ctrl+C` key combination.
+To run the main backend developed in this chapter in dev mode, run the following command:
+
+```
+npm run dev
+```
+
+For production mode, run:
+
+```
+npm start
+```
+
+To exit the web server, press the `Ctrl+C` key combination.
+
+## Tests
+
+To run the tests, execute the following command:
+
+```
+npm test
+```
