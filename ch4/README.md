@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 1
+# Full-Stack React Projects / Chapter 4
 
-_Preparing For Full-Stack Development_
+_Integrating a Frontend Using React and TanStack Query_
 
 ## Requirements
 
@@ -11,6 +11,10 @@ Please install the following, if you do not already have them installed:
 - Visual Studio Code v1.84.2
 
 The versions listed above are the ones used in the book. While installing a newer version should not be an issue, please note that certain steps might work differently on a newer version. If you are having an issue with the code and steps provided in this book, please try using the mentioned versions.
+
+## Preparing the backend
+
+Before running the frontend, please make sure to prepare and start the backend by following the instructions in the [`backend/README.md`](backend/README.md) file.
 
 ## Install
 

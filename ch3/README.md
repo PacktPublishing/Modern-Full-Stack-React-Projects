@@ -26,6 +26,8 @@ npm install
 
 ## Start
 
+First, make sure that the `mongo` Docker container is running.
+
 To run the example backend script, directly execute it with node:
 
 ```

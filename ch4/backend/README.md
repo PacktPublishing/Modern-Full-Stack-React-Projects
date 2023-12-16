@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 3
+# Full-Stack React Projects / Chapter 4 / Backend
 
-_Implementing a Backend Using Express, Mongoose ODM and Jest_
+_Integrating a Frontend Using React and TanStack Query_
 
 ## Requirements
 
@@ -26,13 +26,9 @@ npm install
 
 ## Start
 
-To run the example backend script, directly execute it with node:
+First, make sure that the `mongo` Docker container is running.
 
-```
-node src/example.js
-```
-
-To run the main backend developed in this chapter in dev mode, run the following command:
+To run the backend in dev mode, run the following command:
 
 ```
 npm run dev
