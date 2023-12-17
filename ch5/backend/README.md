@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 4 / Backend
+# Full-Stack React Projects / Chapter 5 / Backend
 
-_Integrating a Frontend Using React and TanStack Query_
+_Deploying the Application with Docker and CI/CD_
 
 ## Requirements
 
@@ -49,3 +49,19 @@ To run the tests, execute the following command:
 ```
 npm test
 ```
+
+## Building the Docker image
+
+To build the Docker image for the backend, run the following command:
+
+```
+docker build -t blog-backend .
+```
+
+Then, you can start a new container, as follows:
+
+```
+docker run -it -e PORT=3001 -e DATABASE_URL=mongodb://host.docker.internal:27017/blog -p 3001:3001 blog-backend
+```
+
+Please note that this requires a MongoDB container to be running on port 27017!

@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 4
+# Full-Stack React Projects / Chapter 5
 
-_Integrating a Frontend Using React and TanStack Query_
+_Deploying the Application with Docker and CI/CD_
 
 ## Requirements
 
@@ -31,4 +31,26 @@ To start the app in development mode, run the following command:
 
 ```
 npm run dev
+```
+
+## Using Docker Compose
+
+To run a database service, the backend and the frontend in Docker Compose, execute the following command:
+
+```
+docker compose up
+```
+
+## Building the Docker image
+
+To build the Docker image for the frontend, run the following command:
+
+```
+docker build -t blog-frontend .
+```
+
+Then, you can start a new container, as follows:
+
+```
+docker run -it -p 3000:80 blog-frontend
 ```
