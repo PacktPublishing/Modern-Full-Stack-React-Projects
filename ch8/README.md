@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 7
+# Full-Stack React Projects / Chapter 8
 
-_Improving the Load Time Using Server-Side Rendering_
+_Making Sure Customers Find You with Search Engine Optimization_
 
 ## Requirements
 
