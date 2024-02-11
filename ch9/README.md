@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 8
+# Full-Stack React Projects / Chapter 9
 
 _Making Sure Customers Find You with Search Engine Optimization_
 
@@ -60,4 +60,18 @@ Then, you can start a new container, as follows:
 
 ```
 docker run -it -p 3000:80 blog-frontend
+```
+
+## Running Playwright tests
+
+To run the Playwright tests for this project in headless mode, execute the following command:
+
+```
+npx playwright test
+```
+
+The test report can then be viewed as follows:
+
+```
+npx playwright show-report
 ```
