@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 8 / Backend
+# Full-Stack React Projects / Chapter 9 / Backend
 
-_Making Sure Customers Find You with Search Engine Optimization_
+_Implementing End-To-End Tests Using Playwright_
 
 ## Requirements
 

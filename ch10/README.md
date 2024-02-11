@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 9
+# Full-Stack React Projects / Chapter 10
 
-_Making Sure Customers Find You with Search Engine Optimization_
+_Aggregating and Visualizing Statistics Using MongoDB and Victory_
 
 ## Requirements
 
