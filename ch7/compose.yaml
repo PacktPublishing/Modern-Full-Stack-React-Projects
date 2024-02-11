@@ -8,7 +8,7 @@ services:
     build: backend/
     environment:
       - PORT=3001
-      - DATABASE_URL=mongodb://host.docker.internal:27017/ch5
+      - DATABASE_URL=mongodb://host.docker.internal:27017/blog
     ports:
       - '3001:3001'
     depends_on:
