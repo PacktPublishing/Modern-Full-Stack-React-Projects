@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import slug from 'slug'
 import { User } from './User.jsx'
 
-export function Post({ title, contents, author, _id, fullPost = false }) {
+export function Post({ title, contents, author, id, fullPost = false }) {
   return (
     <article>
       {fullPost ? (
         <h3>{title}</h3>
       ) : (
-        <Link to={`/posts/${_id}/${slug(title)}`}>
+        <Link to={`/posts/${id}/${slug(title)}`}>
           <h3>{title}</h3>
         </Link>
       )}
@@ -17,7 +17,7 @@ export function Post({ title, contents, author, _id, fullPost = false }) {
       {author && (
         <em>
           {fullPost && <br />}
-          Written by <User id={author} />
+          Written by <User {...author} />
         </em>
       )}
     </article>
@@ -26,8 +26,8 @@ export function Post({ title, contents, author, _id, fullPost = false }) {
 
 Post.propTypes = {
   title: PropTypes.string.isRequired,
-  contents: PropTypes.string,
+  contents: PropTypes.shape(User.propTypes),
   author: PropTypes.string,
-  _id: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   fullPost: PropTypes.bool,
 }

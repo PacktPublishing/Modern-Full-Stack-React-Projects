@@ -1,23 +1,22 @@
 import { useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { useQuery as useGraphQLQuery } from '@apollo/client/react/index.js'
 import { Helmet } from 'react-helmet-async'
 import { PostList } from '../components/PostList.jsx'
 import { CreatePost } from '../components/CreatePost.jsx'
 import { PostFilter } from '../components/PostFilter.jsx'
 import { PostSorting } from '../components/PostSorting.jsx'
 import { Header } from '../components/Header.jsx'
-import { getPosts } from '../api/posts.js'
+import { GET_POSTS, GET_POSTS_BY_AUTHOR } from '../api/graphql/posts.js'
 
 export function Blog() {
   const [author, setAuthor] = useState('')
   const [sortBy, setSortBy] = useState('createdAt')
   const [sortOrder, setSortOrder] = useState('descending')
 
-  const postsQuery = useQuery({
-    queryKey: ['posts', { author, sortBy, sortOrder }],
-    queryFn: () => getPosts({ author, sortBy, sortOrder }),
+  const postsQuery = useGraphQLQuery(author ? GET_POSTS_BY_AUTHOR : GET_POSTS, {
+    variables: { author, options: { sortBy, sortOrder } },
   })
-  const posts = postsQuery.data ?? []
+  const posts = postsQuery.data?.postsByAuthor ?? postsQuery.data?.posts ?? []
 
   return (
     <div style={{ padding: 8 }}>

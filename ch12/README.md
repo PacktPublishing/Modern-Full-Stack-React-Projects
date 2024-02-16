@@ -1,6 +1,6 @@
-# Full-Stack React Projects / Chapter 11
+# Full-Stack React Projects / Chapter 12
 
-_Building a Backend With a GraphQL API_
+_Interfacing with GraphQL on the Frontend Using Apollo Client_
 
 ## Requirements
 
