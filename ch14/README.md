@@ -20,7 +20,7 @@ Before running the frontend, please make sure to prepare and start the backend b
 
 If you cloned the full repository for the book, Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the corresponding chapter folder.
 
-```
+```bash
 git init
 npm install
 ```
@@ -29,7 +29,7 @@ npm install
 
 To start the app in development mode, run the following command:
 
-```
+```bash
 npm run dev
 ```
 
@@ -37,7 +37,7 @@ npm run dev
 
 To run a database service, the backend and the frontend in Docker Compose, execute the following command:
 
-```
+```bash
 docker compose up
 ```
 
@@ -45,12 +45,12 @@ docker compose up
 
 To build the Docker image for the frontend, run the following command:
 
-```
-docker build -t blog-frontend .
+```bash
+docker build -t chat-frontend .
 ```
 
 Then, you can start a new container, as follows:
 
-```
-docker run -it -p 3000:80 blog-frontend
+```bash
+docker run -it -p 3000:80 chat-frontend
 ```

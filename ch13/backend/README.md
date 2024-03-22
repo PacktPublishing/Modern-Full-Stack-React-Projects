@@ -19,7 +19,7 @@ The versions listed above are the ones used in the book. While installing a newe
 
 If you cloned the full repository for the book, Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the corresponding chapter folder.
 
-```
+```bash
 git init
 npm install
 ```
@@ -30,13 +30,13 @@ First, make sure that the `mongo` Docker container is running.
 
 To run the backend in dev mode, run the following command:
 
-```
+```bash
 npm run dev
 ```
 
 For production mode, run:
 
-```
+```bash
 npm start
 ```
 
@@ -46,7 +46,7 @@ To exit the web server, press the `Ctrl+C` key combination.
 
 To run the tests, execute the following command:
 
-```
+```bash
 npm test
 ```
 
@@ -54,14 +54,14 @@ npm test
 
 To build the Docker image for the backend, run the following command:
 
-```
-docker build -t blog-backend .
+```bash
+docker build -t chat-backend .
 ```
 
 Then, you can start a new container, as follows:
 
-```
-docker run -it -e PORT=3001 -e DATABASE_URL=mongodb://host.docker.internal:27017/blog -p 3001:3001 blog-backend
+```bash
+docker run -it -e PORT=3001 -e DATABASE_URL=mongodb://host.docker.internal:27017/chat -p 3001:3001 chat-backend
 ```
 
 Please note that this requires a MongoDB container to be running on port 27017!

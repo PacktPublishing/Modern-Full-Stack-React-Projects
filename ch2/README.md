@@ -19,7 +19,7 @@ The versions listed above are the ones used in the book. While installing a newe
 
 If you cloned the full repository for the book, Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the corresponding chapter folder.
 
-```
+```bash
 git init
 npm install
 ```
@@ -28,7 +28,7 @@ npm install
 
 To run the backend scripts, run the respective files using node, as follows:
 
-```
+```bash
 node backend/helloworld.js
 node backend/files.js
 node backend/simpleweb.js
