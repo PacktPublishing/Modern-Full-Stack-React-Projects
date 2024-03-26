@@ -46,3 +46,30 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Deploy via Docker
+
+To deploy our app via Docker, we first need to build the Docker image by running the following command:
+
+```bash
+docker build \
+  -t blog-nextjs \
+  --build-arg "DATABASE_URL=mongodb://host.docker.internal:27017/blog" \
+  --build-arg "JWT_SECRET=replace-with-random-secret" \
+  --build-arg "BASE_URL=http://localhost:3000" \
+  .
+```
+
+Now, we can start a new container, as follows:
+
+```bash
+docker run \
+  -d \
+  --name blog-app \
+  -p 3000:3000 \
+  -e "DATABASE_URL=mongodb://host.docker.internal:27017/blog" \
+  -e "JWT_SECRET=replace-with-random-secret" \
+  -e "BASE_URL=http://localhost:3000" \
+  --restart unless-stopped \
+  blog-nextjs
+```

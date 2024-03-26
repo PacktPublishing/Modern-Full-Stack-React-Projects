@@ -1,3 +1,6 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 import { initDatabase } from './db/init.js'
 import { Post } from './db/models/post.js'
 

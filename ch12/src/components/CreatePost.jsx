@@ -1,4 +1,4 @@
-import { useMutation as useGraphQLMutation } from '@apollo/client'
+import { useMutation as useGraphQLMutation } from '@apollo/client/react/index.js'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import slug from 'slug'

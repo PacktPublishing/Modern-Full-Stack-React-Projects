@@ -17,10 +17,9 @@ The versions listed above are the ones used in the book. While installing a newe
 
 ## Install
 
-If you cloned the full repository for the book, Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the corresponding chapter folder.
+To install the dependencies, run:
 
 ```bash
-git init
 npm install
 ```
 
