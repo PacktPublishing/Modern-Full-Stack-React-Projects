@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 postsRoutes(app)
 
 app.get('/', (req, res) => {
-  res.send('Hello World from Express!')
+  res.send('Hello from Express!')
 })
 
 export { app }
