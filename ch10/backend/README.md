@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 10 / Backend
+# Modern Full-Stack React Projects / Chapter 10 / Backend
 
 _Aggregating and Visualizing Statistics Using MongoDB and Victory_
 

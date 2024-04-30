@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 14 / Backend
+# Modern Full-Stack React Projects / Chapter 14 / Backend
 
 _Creating a Frontend to Consume and Send Events_
 

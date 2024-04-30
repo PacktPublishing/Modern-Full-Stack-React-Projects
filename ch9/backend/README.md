@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 9 / Backend
+# Modern Full-Stack React Projects / Chapter 9 / Backend
 
 _Implementing End-To-End Tests Using Playwright_
 

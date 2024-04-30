@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 8 / Backend
+# Modern Full-Stack React Projects / Chapter 8 / Backend
 
 _Making Sure Customers Find You with Search Engine Optimization_
 

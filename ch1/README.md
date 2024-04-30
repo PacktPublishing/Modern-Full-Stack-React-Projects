@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 1
+# Modern Full-Stack React Projects / Chapter 1
 
 _Preparing For Full-Stack Development_
 

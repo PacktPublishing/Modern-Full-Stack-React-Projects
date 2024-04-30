@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 11 / Backend
+# Modern Full-Stack React Projects / Chapter 11 / Backend
 
 _Building a Backend With a GraphQL API_
 

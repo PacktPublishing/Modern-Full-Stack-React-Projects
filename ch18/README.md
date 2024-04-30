@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 18
+# Modern Full-Stack React Projects / Chapter 18
 
 _Advanced Next.js Concepts & Optimizations_
 

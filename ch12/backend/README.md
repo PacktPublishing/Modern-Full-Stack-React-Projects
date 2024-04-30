@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 12 / Backend
+# Modern Full-Stack React Projects / Chapter 12 / Backend
 
 _Interfacing with GraphQL on the Frontend Using Apollo Client_
 

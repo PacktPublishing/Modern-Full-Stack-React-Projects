@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 13 / Backend
+# Modern Full-Stack React Projects / Chapter 13 / Backend
 
 _Building an Event-Based Backend Using Express and Socket.IO_
 

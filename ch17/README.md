@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 17
+# Modern Full-Stack React Projects / Chapter 17
 
 _Introducing React Server Components_
 

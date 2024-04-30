@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 19
+# Modern Full-Stack React Projects / Chapter 19
 
 _Deploying a Next.js App_
 

@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 16
+# Modern Full-Stack React Projects / Chapter 16
 
 _Getting Started with Next.js_
 

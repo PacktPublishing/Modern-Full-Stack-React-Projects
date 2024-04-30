@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 7 / Backend
+# Modern Full-Stack React Projects / Chapter 7 / Backend
 
 _Improving the Load Time Using Server-Side Rendering_
 

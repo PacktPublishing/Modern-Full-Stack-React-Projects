@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 3
+# Modern Full-Stack React Projects / Chapter 3
 
 _Implementing a Backend Using Express, Mongoose ODM and Jest_
 

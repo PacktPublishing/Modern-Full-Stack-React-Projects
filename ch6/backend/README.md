@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 6 / Backend
+# Modern Full-Stack React Projects / Chapter 6 / Backend
 
 _Adding Authentication with JWT_
 

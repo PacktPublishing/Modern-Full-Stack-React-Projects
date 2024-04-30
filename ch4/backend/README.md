@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 4 / Backend
+# Modern Full-Stack React Projects / Chapter 4 / Backend
 
 _Integrating a Frontend Using React and TanStack Query_
 

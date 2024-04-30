@@ -1,4 +1,4 @@
-# Full-Stack React Projects / Chapter 15
+# Modern Full-Stack React Projects / Chapter 15
 
 _Adding Persistence to Socket.IO Using MongoDB_
 
