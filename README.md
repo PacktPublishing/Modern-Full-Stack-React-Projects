@@ -29,11 +29,10 @@ All of the code is organized into folders. For example, Chapter02.
 
 The code will look like the following:
 ```
-{
-    _id: ObjectId("6405f062b0d06adeaeefc3bc"),
-    username: 'dan',
-    fullName: 'Daniel Bugl',
-    age: 26
+export const getPostById = async (postId) => {
+  const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/
+posts/${postId}`)
+  return await res.json()
 }
 ```
 
