@@ -25,7 +25,7 @@ alt="https://www.packtpub.com/" border="5" /></a>
 
 
 ## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter02.
+All of the code is organized into folders. For example, `ch1` for Chapter 1.
 
 The code will look like the following:
 ```
@@ -66,7 +66,7 @@ git clone https://github.com/PacktPublishing/Modern-Full-Stack-React-Projects
 
 After cloning, you can run the examples by going to the corresponding folder and following the steps in the `README.md` file there.
 
-For example, to go to the `ch1/` folder, execute:
+For example, to run the example code for Chapter 1, first go to the `ch1/` folder, by executing:
 
 ```
 cd ch1/
