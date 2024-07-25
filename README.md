@@ -104,6 +104,9 @@ Then follow the **Install** and **Start** steps, as explained in the correspondi
 
 * Micro State Management with React Hooks [[Packt]](https://www.packtpub.com/product/micro-state-management-with-react-hooks/9781801812375) [[Amazon]](https://www.amazon.com/dp/1801812373)
 
+## Errata
+* Page 66, Under 'Defining test cases for list posts' section **Edit the src/services/posts.js file** _should be_ **Edit the src/__tests__/posts.test.js file**
+
 ## Get to Know the Author
 **Daniel Bugl**
 is a CEO, Software Architect and Full Stack Developer for his company TouchLay, developing a platform for interactive presentations. He also consults large multinational enterprises on the development and integration of React frontends with various backend systems, including the integration of legacy systems, and helps out with the setup and development of such projects. He has a bachelor&rsquo;s degree in business informatics and a master&rsquo;s degree in data science.
